@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Sales Mitsubishi - Hubungi Kami via WhatsApp & Telepon</title>
+    <meta name="description" content="Hubungi sales Mitsubishi resmi via WhatsApp, telepon, atau kunjungi showroom kami. Layanan cepat, profesional, dan solusi terbaik untuk kebutuhan mobil Mitsubishi Anda.">
+    <meta name="keywords" content="kontak mitsubishi, sales mitsubishi, dealer mitsubishi, hubungi mitsubishi, alamat showroom mitsubishi">
+    <meta name="author" content="Sales Mitsubishi Indonesia">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Kontak Sales Mitsubishi - Hubungi Kami via WhatsApp & Telepon">
+    <meta property="og:description" content="Hubungi sales Mitsubishi resmi via WhatsApp, telepon, atau kunjungi showroom kami.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://salesmitsubishi.id/contact.html">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'Inter', 'Poppins', sans-serif;
+        }
+        
+        /* Minimalis Design - Konsisten dengan tab lain */
+        .minimal-card {
+            background: white;
+            border-radius: 16px;
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+            overflow: hidden;
+        }
+        
+        .minimal-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            border-color: #e60012;
+        }
+        
+        .contact-badge {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #e60012 0%, #c4000f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+            margin: 40px 0;
+        }
+        
+        /* Contact Icon */
+        .contact-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        /* Map Container */
+        .map-container {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Floating Animation */
+        .floating-pulse {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        /* Contact Info Box */
+        .contact-info-box {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-radius: 12px;
+            background: #f8fafc;
+            transition: all 0.3s ease;
+            margin-bottom: 16px;
+        }
+        
+        .contact-info-box:hover {
+            background: white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            transform: translateY(-3px);
+        }
+        
+        .contact-info-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 16px;
+            flex-shrink: 0;
+            font-size: 1.2rem;
+        }
+        
+        /* Sales Team Card */
+        .sales-card {
+            text-align: center;
+            padding: 24px;
+        }
+        
+        .sales-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e60012 0%, #c4000f 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.8rem;
+            margin: 0 auto 16px;
+        }
+        
+        /* CTA Button */
+        .cta-button {
+            background: linear-gradient(135deg, #e60012 0%, #c4000f 100%);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(230, 0, 18, 0.3);
+            color: white;
+        }
+        
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fadeIn {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="text-gray-800 bg-gray-50">
+    <!-- Navbar (sama dengan halaman sebelumnya) -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="img/Mitsubishi_logo.png" alt="Mitsubishi Logo" class="h-10 w-auto mr-3">
+                        <span class="text-xl font-bold text-gray-800">Mitsubishi Sales</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-red-600 transition">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-red-600 transition">Tentang Kami</a>
+                    <a href="products.html" class="text-gray-600 hover:text-red-600 transition">Produk</a>
+                    <a href="promo.html" class="text-gray-600 hover:text-red-600 transition">Promo</a>
+                    <a href="testimonial.html" class="text-gray-600 hover:text-red-600 transition">Testimonial</a>
+                    <a href="kontak.html" class="text-red-600 font-semibold border-b-2 border-red-600 pb-1">Kontak</a>
+                </div>
+
+                <!-- CTA Button & Mobile Menu Toggle -->
+                <div class="flex items-center space-x-4">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-700 transition hidden md:block">
+                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                    </a>
+                    <button id="mobile-menu-button" class="md:hidden text-gray-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden bg-white border-t py-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-gray-600">Home</a>
+                    <a href="about.html" class="text-gray-600">Tentang Kami</a>
+                    <a href="products.html" class="text-gray-600">Produk</a>
+                    <a href="promo.html" class="text-gray-600">Promo</a>
+                    <a href="testimonial.html" class="text-gray-600">Testimonial</a>
+                    <a href="kontak.html" class="text-red-600 font-semibold">Kontak</a>
+                    <a href="https://wa.me/6281234567890" target="_blank" class="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold text-center">
+                        <i class="fab fa-whatsapp mr-2"></i> Hubungi via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-white py-4 border-b">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center text-sm">
+                <a href="index.html" class="text-gray-500 hover:text-red-600 transition">Home</a>
+                <span class="mx-2 text-gray-400">/</span>
+                <span class="text-red-600 font-medium">Kontak Kami</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Contact Section -->
+    <section class="pt-12 pb-16 bg-gradient-to-br from-white to-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-4xl mx-auto">
+                <!-- Badge -->
+                <div class="inline-flex items-center mb-6">
+                    <span class="contact-badge">
+                        <i class="fas fa-headset mr-2"></i> LAYANAN CEPAT
+                    </span>
+                    <span class="mx-3 text-gray-400">•</span>
+                    <span class="text-sm text-gray-600">Respon dalam 5 menit via WhatsApp</span>
+                </div>
+                
+                <!-- Main Title -->
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    <span class="gradient-text">Hubungi Kami</span><br>
+                    <span class="text-gray-800">Sales Mitsubishi</span>
+                </h1>
+                
+                <!-- Subtitle -->
+                <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                    Tim sales profesional kami siap membantu Anda mendapatkan Mitsubishi impian dengan penawaran terbaik.
+                </p>
+                
+                <!-- Quick Contact Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto mb-16">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-red-600 mb-2">5<span class="text-lg">mnt</span></div>
+                        <div class="text-gray-600 font-medium">Rata-rata Respon</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-red-600 mb-2">24/7</div>
+                        <div class="text-gray-600 font-medium">Layanan WhatsApp</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-red-600 mb-2">100%</div>
+                        <div class="text-gray-600 font-medium">Free Konsultasi</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-red-600 mb-2">15<span class="text-lg">thn</span></div>
+                        <div class="text-gray-600 font-medium">Pengalaman</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <!-- Grid Layout -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    
+                    <!-- Left Column: Contact Methods -->
+                    <div class="space-y-8">
+                        <!-- WhatsApp Card -->
+                        <div class="minimal-card overflow-hidden">
+                            <div class="p-8">
+                                <div class="flex flex-col md:flex-row items-center">
+                                    <div class="md:w-1/3 mb-6 md:mb-0 text-center">
+                                        <div class="contact-icon bg-green-100 text-green-600 mx-auto md:mx-0">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </div>
+                                    </div>
+                                    <div class="md:w-2/3 md:pl-8 text-center md:text-left">
+                                        <h3 class="text-xl font-bold mb-4">WhatsApp Official</h3>
+                                        <p class="text-gray-600 mb-6">Kirim pesan langsung ke tim sales kami via WhatsApp untuk konsultasi, simulasi kredit, atau informasi promo terbaru.</p>
+                                        
+                                        <div class="contact-info-box">
+                                            <div class="contact-info-icon bg-green-100 text-green-600">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </div>
+                                            <div>
+                                                <div class="font-bold text-lg">0812-3456-7890</div>
+                                                <div class="text-sm text-gray-600">Respon dalam 5 menit</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mt-8">
+                                            <a href="https://wa.me/6281234567890?text=Halo%20Sales%20Mitsubishi,%20saya%20ingin%20konsultasi%20tentang%20Mitsubishi" 
+                                               target="_blank" class="cta-button w-full text-center">
+                                                <i class="fab fa-whatsapp mr-3"></i> Chat via WhatsApp Sekarang
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Email & Social Media -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Email Sales -->
+                            <div class="minimal-card p-6">
+                                <div class="contact-icon bg-blue-100 text-blue-600">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-4">Email Sales</h3>
+                                <p class="text-gray-600 mb-6">Kirim email untuk pertanyaan detail atau penawaran khusus.</p>
+                                
+                                <div class="space-y-4">
+                                    <div>
+                                        <div class="font-bold text-lg">sales@mitsubishideal.id</div>
+                                        <div class="text-sm text-gray-600">Penawaran & Konsultasi</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-6 pt-6 border-t border-gray-100">
+                                    <a href="mailto:sales@mitsubishideal.id" class="bg-white text-gray-800 border border-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition w-full inline-block text-center">
+                                        <i class="fas fa-envelope mr-2"></i> Kirim Email
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Social Media -->
+                            <div class="minimal-card p-6">
+                                <div class="contact-icon bg-purple-100 text-purple-600">
+                                    <i class="fas fa-hashtag"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-4">Social Media</h3>
+                                <p class="text-gray-600 mb-6">Ikuti kami di media sosial untuk update terbaru.</p>
+                                
+                                <div class="grid grid-cols-2 gap-4">
+                                    <a href="#" class="flex items-center justify-center p-3 bg-pink-50 text-pink-600 rounded-lg hover:bg-pink-100 transition">
+                                        <i class="fab fa-instagram mr-2"></i> Instagram
+                                    </a>
+                                    <a href="#" class="flex items-center justify-center p-3 bg-black text-white rounded-lg hover:bg-gray-800 transition">
+                                        <i class="fab fa-tiktok mr-2"></i> TikTok
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Maps & Telepon -->
+                    <div class="space-y-8">
+                        <!-- Maps -->
+                        <div class="minimal-card overflow-hidden">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-6">Lokasi Showroom</h3>
+                                <div class="map-container h-64 mb-6">
+                                    <!-- Google Maps Embed -->
+                                    <iframe 
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.603646833595!2d106.65377357587168!3d-6.185779760751469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f8f0a8c5c6b5%3A0x6b5b5e5e5e5e5e5e!2sMitsubishi%20Dealer!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid" 
+                                        width="100%" 
+                                        height="100%" 
+                                        style="border:0;" 
+                                        allowfullscreen="" 
+                                        loading="lazy" 
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </div>
+                                <a href="https://maps.google.com/?q=Jl.+Raya+Tangerang+No.+123,+Tangerang,+Banten" 
+                                   target="_blank" class="bg-white text-gray-800 border border-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition w-full inline-block text-center">
+                                    <i class="fas fa-directions mr-2"></i> Buka di Google Maps
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Telepon -->
+                        <div class="minimal-card p-6">
+                            <div class="contact-icon bg-red-100 text-red-600">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Telepon Langsung</h3>
+                            <p class="text-gray-600 mb-6">Hubungi nomor telepon resmi kami untuk informasi lebih detail.</p>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="font-bold text-lg">(021) 1234-5678</div>
+                                    <div class="text-sm text-gray-600">Hotline Utama</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 pt-6 border-t border-gray-100">
+                                <a href="tel:02112345678" class="bg-white text-gray-800 border border-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition w-full inline-block text-center">
+                                    <i class="fas fa-phone mr-2"></i> Telepon Sekarang
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Contact -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12">Pertanyaan Seputar Layanan</h2>
+                
+                <div class="space-y-6">
+                    <div class="minimal-card p-6">
+                        <h3 class="text-xl font-bold mb-3 flex items-center">
+                            <i class="fas fa-question-circle text-red-600 mr-3"></i>
+                            Berapa lama respon via WhatsApp?
+                        </h3>
+                        <p class="text-gray-600">Kami berkomitmen memberikan respon dalam 5 menit untuk pesan WhatsApp yang masuk. Tim kami aktif 24/7 untuk melayani Anda.</p>
+                    </div>
+                    
+                    <div class="minimal-card p-6">
+                        <h3 class="text-xl font-bold mb-3 flex items-center">
+                            <i class="fas fa-question-circle text-red-600 mr-3"></i>
+                            Apakah ada biaya konsultasi?
+                        </h3>
+                        <p class="text-gray-600">Tidak, semua konsultasi via telepon, WhatsApp, email, atau langsung di showroom TANPA BIAYA. Layanan konsultasi kami sepenuhnya gratis.</p>
+                    </div>
+                    
+                    <div class="minimal-card p-6">
+                        <h3 class="text-xl font-bold mb-3 flex items-center">
+                            <i class="fas fa-question-circle text-red-600 mr-3"></i>
+                            Bisa test drive langsung?
+                        </h3>
+                        <p class="text-gray-600">Ya, Anda bisa melakukan test drive langsung di showroom kami. Hubungi via WhatsApp untuk janji temu terlebih dahulu.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <p class="text-gray-600 mb-6">Masih ada pertanyaan? Hubungi kami sekarang juga!</p>
+                    <a href="https://wa.me/6281234567890" 
+                       target="_blank" class="cta-button inline-flex">
+                        <i class="fab fa-whatsapp mr-3"></i> Tanya via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info dengan logo Mitsubishi -->
+                <div>
+                    <div class="flex items-center mb-6">
+                        <a href="index.html" class="flex items-center">
+                            <img src="img/Mitsubishi_logo.png" alt="Mitsubishi Logo" class="h-10 w-auto mr-3">
+                            <span class="text-xl font-bold">Mitsubishi Sales</span>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 mb-6">Dealer resmi Mitsubishi Indonesia yang menyediakan solusi kendaraan terbaik dengan pelayanan profesional dan harga kompetitif.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-800 hover:bg-red-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-red-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-red-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Menu Cepat</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition">Produk Mitsubishi</a></li>
+                        <li><a href="promo.html" class="text-gray-400 hover:text-white transition">Promo & Diskon</a></li>
+                        <li><a href="testimonial.html" class="text-gray-400 hover:text-white transition">Testimonial</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- Produk -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Kategori Produk</h4>
+                    <ul class="space-y-3">
+                        <li><a href="passenger.html" class="text-gray-400 hover:text-white transition">Mitsubishi Passenger</a></li>
+                        <li><a href="canter.html" class="text-gray-400 hover:text-white transition">Mitsubishi Canter</a></li>
+                        <li><a href="fuso.html" class="text-gray-400 hover:text-white transition">Mitsubishi Fuso</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kontak -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Hubungi Kami</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-red-600 mr-3 mt-1"></i>
+                            <span class="text-gray-400">Jl. Raya Tangerang No. 123, Tangerang, Banten</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-red-600 mr-3"></i>
+                            <span class="text-gray-400">(021) 1234-5678</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp text-red-600 mr-3"></i>
+                            <span class="text-gray-400">0812-3456-7890</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Sales Mitsubishi Indonesia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Chat -->
+    <a href="https://wa.me/6281234567890" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-50 hover:bg-green-600 transition floating-pulse">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add animation to cards on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fadeIn');
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe cards
+            document.querySelectorAll('.minimal-card').forEach(card => {
+                observer.observe(card);
+            });
+            
+            // Animate contact info boxes on load
+            setTimeout(() => {
+                document.querySelectorAll('.contact-info-box').forEach((box, index) => {
+                    setTimeout(() => {
+                        box.classList.add('animate-fadeIn');
+                    }, index * 100);
+                });
+            }, 300);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                
+                if (href !== '#' && href.startsWith('#') && document.querySelector(href)) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
